@@ -1,6 +1,9 @@
 /*
-Initial Layout done.
-h3s from recipe aren't not getting sized.
+Initial Layout done.    Done
+h3s from recipe aren't not getting sized.   Done
+
+Main Intro:    font-family: "Source Sans 3", sans-serif;
+Main heading: Exo2
 */
 
 
@@ -9,8 +12,8 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    height: 100vh;
-
+    height: 100%;
+    justify-content: center;
     align-items: center;
     text-align: center;
     background-color: hsl(120, 79%, 57%);
@@ -26,25 +29,42 @@ a {
 
 }
 
-.mainHeading {
-    font-family: "Source Sans 3", sans-serif;
-    font-weight: 900;
-    color: rgba(12, 61, 238, 0.878);
+.mainHeading h1 {
+    font-family: "Exo 2", sans-serif;
+    margin: 1.5rem 0rem;
+    font-weight: 600;
+    width: 100vw;
+    /* border:1px solid red;    */
+    font-size: 4rem;
+    color: hsla(16, 91%, 45%, 0.74);
     font-style: italic;
-
+    border-shadow:
 }
 
-p.mainIntro {
-    width: 80rem;
+.mainIntro {
+    width: 90rem;
+    /* border:1px solid red; */
     font-family: "Source Sans 3", sans-serif;
     font-size: 25px;
     font-weight: 600;
     flex-wrap: nowrap;
-    color: hwb(227 6% 7% / 0.878);
+    margin-bottom: 10px;
+    color: hwb(227 16% 7% / 0.878);
     font-style: italic;
-    min-width: 250px;
-
+    height: auto;
+    transition-timing-function: ease-in-out;
 }
+
+
+
+
+.mainIntro:hover {
+    color: #c1f8c1d6;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+
 
 .allRecipes {
     display: flex;
@@ -63,7 +83,7 @@ p.mainIntro {
     margin-bottom: .5rem;
     align-items: center;
     flex-wrap: wrap;
-
+    height: auto;
 }
 
 .recipe img {
@@ -75,6 +95,12 @@ p.mainIntro {
     border-radius: 8px;
 }
 
+.bonusRecipes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 
 /* Study later
@@ -83,6 +109,7 @@ p.mainIntro {
     object-fit: cover; 
 } */
 
+h1,
 h3,
 h2 {
     margin: 0;
@@ -93,14 +120,18 @@ h2 {
     /* border: 1px solid yellow; */
     padding: 5px;
     display: flex;
-    width: max-content;
-    text-align: center;
+
 }
 
-h2.bonusRecipe {
-    font-family: "Source Sans 3", sans-serif;
-    color: yellow;
-    font-size: 25px;
-    font-weight: 600px;
+
+.subMainHeadings {
+    font-family: "Exo 2", sans-serif;
+    margin: 1.5rem 0rem 1.2rem 0rem;
+    font-weight: 600;
+    width: 100vw;
+    /* border:1px solid red;    */
+    font-size: 3rem;
+    color: hsla(16, 91%, 45%, 0.74);
     font-style: italic;
+
 }
