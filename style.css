@@ -1,0 +1,106 @@
+/*
+Initial Layout done.
+h3s from recipe aren't not getting sized.
+*/
+
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+    align-items: center;
+    text-align: center;
+    background-color: hsl(120, 79%, 57%);
+}
+
+p,
+ul,
+a {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+
+}
+
+.mainHeading {
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 900;
+    color: rgba(12, 61, 238, 0.878);
+    font-style: italic;
+
+}
+
+p.mainIntro {
+    width: 80rem;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    flex-wrap: nowrap;
+    color: hwb(227 6% 7% / 0.878);
+    font-style: italic;
+    min-width: 250px;
+
+}
+
+.allRecipes {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.recipe {
+    width: 600px;
+    padding: 10px;
+    /* border: 1px solid red; */
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .5rem;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.recipe img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    /* border: 1px solid red; */
+    border-radius: 8px;
+}
+
+
+
+/* Study later
+.recipes img{   
+    aspect-ratio: 1/1;   
+    object-fit: cover; 
+} */
+
+h3,
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.recipeName {
+    /* border: 1px solid yellow; */
+    padding: 5px;
+    display: flex;
+    width: max-content;
+    text-align: center;
+}
+
+h2.bonusRecipe {
+    font-family: "Source Sans 3", sans-serif;
+    color: yellow;
+    font-size: 25px;
+    font-weight: 600px;
+    font-style: italic;
+}

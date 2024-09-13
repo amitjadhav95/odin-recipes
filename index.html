@@ -4,35 +4,62 @@
 <head>
     <meta charset="utf-8">
     <title>Odin Recipes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <h1>Odin Recipes.</h1>
-    <p>"We're excited to offer you 3 delicious recipes, each crafted to bring something special to your kitchen.
+    <h1 class="mainHeading">Odin Recipes.</h1>
+    <p class="mainIntro">"We're excited to offer you 3 delicious recipes, each crafted to bring something special to
+        your kitchen.
         <br>Whether you're in the mood for something savory or sweet, there's a recipe waiting to inspire your next
         culinary adventure. <br>Dive in and explore these beautifully curated dishes!"
     </p>
-    <ul>
+    <ul class="allRecipes">
         <li>
-            <h3><em><a href="recipes/chocolateCake.html">Delicious Chocolate
-                        Cake.</a></em></h3>
+            <div class="recipe">
+
+                <a href="recipes/chocolateCake.html"> <img src="../images/chocolateCake/chocolateCake.jpg"
+                        alt="Chocolate Cake"></a>
+                <div class="recipeName">
+                    <a href="recipes/chocolateCake.html">
+                        <h3><em>Delicious Chocolate
+                                Cake.</em></h3>
+                    </a>
+                </div>
+                </a>
+            </div>
         </li>
         <li>
-            <h3><em><a href="recipes/tomatoSoupWithCheeseToast.html">Tomato
-                        Soup With Cheese Toast.</a></em></h3>
+            <div class="recipe">
+                <img src="../images/tomatoSoupWithToast/tomatoSoupWithToast.jpg" alt="Tomato Soup with Cheese Toast">
+                <h3><em><a href="recipes/tomatoSoupWithCheeseToast.html">Tomato
+                            Soup With Cheese Toast.</a></em></h3>
+            </div>
         </li>
         <li>
-            <h3><em><a href="recipes/phillySteakSandwich.html">Philly
-                        Cheesesteak Sandwich.</a></em></h3>
+            <div class="recipe">
+                <img src="../images/phillyCheeseSteakSandwich/phillyCheeseSteakSandwichMain.jpg"
+                    alt="Philly Steak Sandwich">
+                <h3><em><a href="recipes/phillySteakSandwich.html">Philly
+                            Cheesesteak Sandwich.</a></em></h3>
+            </div>
         </li>
     </ul>
 
     <br>
-    <h2>We have added a Bonus Recipe:</h2>
-    <ul>
+    <h2 class="bonusRecipe">We have added a Bonus Recipe:</h2>
+    <ul class="bonusRecipe">
         <li>
-            <h3><em><a href="recipes/naanBreadMargheritaPizzaWithProsciutto.html">Naan Bread
-                        Margherita Pizza with Prosciutto.</a></em></h3>
+            <div class="recipe">
+                <img src="../images/naanBreadMargheritaWithProsciutto/naanBreadMargheritaPizza.jpg"
+                    alt="Naan Bread Margherita Pizza Main Img">
+                <h3><em><a href="recipes/naanBreadMargheritaPizzaWithProsciutto.html">Philly
+                            Cheesesteak Sandwich.</a></em></h3>
+            </div>
         </li>
     </ul>
 </body>
