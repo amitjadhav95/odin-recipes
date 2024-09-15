@@ -14,16 +14,15 @@ body {
     flex-direction: column;
     height: auto;
     background-color: hsl(120, 79%, 57%);
-    /* border:2px solid yellow; */
+    border: 2px solid yellow;
     /* border-radius: 15px;  */
 }
 
 .mainDiv {
     display: flex;
     flex-direction: column;
-
     padding: 50px;
-    /* border:1px solid red; */
+    border: 1px solid red;
     flex-wrap: wrap;
 }
 
@@ -38,6 +37,7 @@ a {
 }
 
 h1.mainHeading {
+    display: flex;
     font-family: "Exo 2", sans-serif;
     margin: 1.5rem 0rem;
     font-weight: 600;
@@ -46,7 +46,9 @@ h1.mainHeading {
     font-size: 4rem;
     color: hsla(16, 91%, 45%, 0.74);
     font-style: italic;
-    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-wrap: wrap;
 }
 
 .mainIntro {
@@ -76,13 +78,17 @@ h1.mainHeading {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    border: 1px solid green;
+
 }
 
+
+
 .recipe {
-    /* width: 600px; */
+    width: 100%;
     /*This was rong.*/
     padding: 10px;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     border-radius: 10px;
     padding: 10px;
     display: flex;
@@ -96,16 +102,19 @@ h1.mainHeading {
 .recipe img {
     margin: 0;
     padding: 0;
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
+    /* min-width:380px; */
     height: auto;
+
     /* border: 1px solid red; */
     border-radius: 8px;
     /* -webkit-box-shadow: -6px 7px 17px -1px rgba(65,4,219,0.75);
 -moz-box-shadow: -6px 7px 17px -1px rgba(65,4,219,0.75);
 box-shadow: -6px 7px 17px -1px rgba(65,4,219,0.75); */
-    -webkit-box-shadow: 0px 0px 20px 5px rgba(115, 58, 214, 1);
+    /* -webkit-box-shadow: 0px 0px 20px 5px rgba(115, 58, 214, 1);
     -moz-box-shadow: 0px 0px 20px 5px rgba(115, 58, 214, 1);
-    box-shadow: 0px 0px 20px 5px rgba(115, 58, 214, 1);
+    box-shadow: 0px 0px 20px 5px rgba(115, 58, 214, 1); */
 }
 
 .bonusRecipes {
@@ -113,6 +122,8 @@ box-shadow: -6px 7px 17px -1px rgba(65,4,219,0.75); */
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: 1px solid green;
+
 }
 
 
@@ -130,7 +141,7 @@ h2 {
 }
 
 .recipeName {
-    /* border: 1px solid yellow; */
+    border: 1px solid yellow;
     padding: 5px;
     display: flex;
 
@@ -149,7 +160,6 @@ h2 {
 
 }
 
-.allRecipes h2,
-.bonusRecipe h2 {
+.recipeName h2 {
     font-size: 30px;
 }
