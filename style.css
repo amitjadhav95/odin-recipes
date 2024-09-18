@@ -12,8 +12,10 @@ body {
     flex-direction: column;
     height: auto;
     background-color: hsl(120, 79%, 57%);
-    /* border: 2px solid yellow;     */
+    border: 2px solid yellow;
+    padding: 10px;
     overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 .mainDiv {
@@ -21,10 +23,11 @@ body {
     flex-direction: column;
     /* border: 1px solid red; */
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 p,
-ul,
 a {
     margin: 0;
     padding: 0;
@@ -32,7 +35,8 @@ a {
     text-decoration: none;
 }
 
-.mainHeading {
+.mainHeading,
+.recipeTitle {
     display: flex;
     font-family: "Exo 2", sans-serif;
     margin: .5rem 0rem .5rem 0rem;
@@ -154,4 +158,44 @@ h2 {
 
 .recipeName h2 {
     font-size: 30px;
+}
+
+/*Recipe Details CSS Page*/
+.recipeDetails {
+    border: 1px solid red;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    flex-wrap: wrap;
+}
+
+.recipeDetails ol {
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+
+.recipeDetails img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.duration {
+    width: 100%;
+    /* box-sizing: border-box; */
+    border: 1px solid red;
+}
+
+.ingredients {
+    width: 100%;
+}
+
+h3.backButton {
+    display: flex;
+    border: 1px solid red;
+    width: 100%;
+    text-align: left;
 }
