@@ -5,7 +5,8 @@ h3s from recipe aren't not getting sized.   Done
 Main Intro:    font-family: "Source Sans 3", sans-serif;
 Main heading: Exo2
 */
-
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
 body {
     display: flex;
@@ -38,10 +39,11 @@ a {
 .mainHeading,
 .recipeTitle {
     display: flex;
-    font-family: "Exo 2", sans-serif;
     margin: .5rem 0rem .5rem 0rem;
     font-weight: 400;
     flex-wrap: wrap;
+    font-family: "Exo 2", sans-serif;
+
     font-size: 2.5rem;
     /* color: hsla(16, 91%, 45%, 0.74); */
     font-style: italic;
@@ -51,17 +53,43 @@ a {
     text-wrap: wrap;
 }
 
+.mainHeading {
+    font-size: 3rem;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+.recipeTitle {
+    font-family: "Exo 2", sans-serif;
+    font-size: 2.5rem;
+
+}
+
+.recipeTitle {
+    color: blue;
+}
+
 .mainHeading a:link {
     color: red;
 }
 
-.mainHeading a:visited {
+.recipeTitle a:link {
+    color: blue;
+}
+
+.mainHeading a:visited,
+.recipeTitle a:visited {
     color: red;
 }
 
-.mainHeading a:hover {
+.mainHeading a:hover,
+.recipeTitle a:hover {
     color: yellow;
 }
+
+.recipeTitle {
+    color: blue;
+}
+
 
 .mainIntro {
     /* border:1px solid red; */
@@ -107,11 +135,32 @@ a {
 }
 
 .recipe img {
-    margin: 0;
-    padding: 0;
     width: 100%;
     max-width: 500px;
-    height: auto;
+}
+
+.mainImg {
+    text-align: center;
+    display: flex;
+    padding: 10px;
+    /* border: 1px solid red; */
+    justify-content: center;
+
+}
+
+.mainImg img {
+
+    width: 900px !important;
+    height: 300px;
+    object-fit: fill;
+}
+
+
+
+.recipe img,
+.recipeDetails img {
+    margin: 0;
+    padding: 0;
     border-radius: 8px;
     -webkit-box-shadow: 0px 0px 20px 5px rgba(115, 58, 214, 1);
     -moz-box-shadow: 0px 0px 20px 5px rgba(115, 58, 214, 1);
@@ -119,6 +168,10 @@ a {
     /* -webkit-box-shadow: -6px 7px 17px -1px rgba(65,4,219,0.75);
     -moz-box-shadow: -6px 7px 17px -1px rgba(65,4,219,0.75);
     box-shadow: -6px 7px 17px -1px rgba(65,4,219,0.75); */
+}
+
+.recipeDetails img {
+    width: 500px;
 }
 
 .bonusRecipes {
@@ -160,42 +213,64 @@ h2 {
     font-size: 30px;
 }
 
-/*Recipe Details CSS Page*/
+/*------------------------------------------------Recipe Details CSS Page--------------------------------------------------*/
 .recipeDetails {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     padding: 5px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* text-align: center; */
-    flex-wrap: wrap;
-}
-
-.recipeDetails ol {
-    border: 1px solid red;
     box-sizing: border-box;
+    padding: 0% 15%;
 }
 
-.recipeDetails img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
+.disc {
+    text-align: left;
 }
+
 
 .duration {
     width: 100%;
-    /* box-sizing: border-box; */
-    border: 1px solid red;
+
+    /* border: 1px solid red; */
 }
 
 .ingredients {
     width: 100%;
-}
-
-h3.backButton {
-    display: flex;
-    border: 1px solid red;
-    width: 100%;
     text-align: left;
 }
+
+.recipeSteps {
+    /* border: 1px solid orange; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.recipeSteps ol {
+    /* border: 1px solid red; */
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.stepsImg {
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.backButton {
+    display: block;
+    font-size: 20px;
+    /* color: red; */
+}
+
+/* Pending Ops
+Remove Important property.
+Bullets placements in Homepage.
+*/
