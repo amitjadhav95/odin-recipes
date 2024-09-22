@@ -13,7 +13,7 @@ body {
     flex-direction: column;
     height: auto;
     background-color: hsl(120, 79%, 57%);
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
     padding: 10px;
     overflow-x: hidden;
     box-sizing: border-box;
@@ -28,12 +28,19 @@ body {
     justify-content: center;
 }
 
+
 p,
-a {
+a,
+ol,
+ul {
     margin: 0;
     padding: 0;
-    list-style-type: none;
     text-decoration: none;
+}
+
+.mainDiv ul {
+    list-style-type: none;
+
 }
 
 .mainHeading,
@@ -41,16 +48,10 @@ a {
     display: flex;
     margin: .5rem 0rem .5rem 0rem;
     font-weight: 400;
-    flex-wrap: wrap;
-    font-family: "Exo 2", sans-serif;
-
-    font-size: 2.5rem;
     /* color: hsla(16, 91%, 45%, 0.74); */
     font-style: italic;
-    align-items: flex-start;
     justify-content: center;
     /* border: 1px solid red; */
-    text-wrap: wrap;
 }
 
 .mainHeading {
@@ -92,7 +93,7 @@ a {
 
 
 .mainIntro {
-    /* border:1px solid red; */
+    /* border: 1px solid red;   */
     font-family: "Source Sans 3", sans-serif;
     font-size: 25px;
     font-weight: 600;
@@ -110,15 +111,6 @@ a {
     font-weight: 800;
 }
 
-.allRecipes {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-    /* border: 1px solid green; */
-
-}
 
 
 
@@ -139,24 +131,6 @@ a {
     max-width: 500px;
 }
 
-.mainImg {
-    text-align: center;
-    display: flex;
-    padding: 10px;
-    /* border: 1px solid red; */
-    justify-content: center;
-
-}
-
-.mainImg img {
-
-    width: 900px !important;
-    height: 300px;
-    object-fit: fill;
-}
-
-
-
 .recipe img,
 .recipeDetails img {
     margin: 0;
@@ -168,20 +142,16 @@ a {
     /* -webkit-box-shadow: -6px 7px 17px -1px rgba(65,4,219,0.75);
     -moz-box-shadow: -6px 7px 17px -1px rgba(65,4,219,0.75);
     box-shadow: -6px 7px 17px -1px rgba(65,4,219,0.75); */
+    margin-left: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+
 }
 
 .recipeDetails img {
     width: 500px;
 }
 
-.bonusRecipes {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* border: 1px solid green; */
-
-}
 
 
 h1,
@@ -195,7 +165,6 @@ h2 {
     /* border: 1px solid yellow; */
     padding: 5px;
     display: flex;
-
 }
 
 
@@ -206,7 +175,7 @@ h2 {
     font-size: 3rem;
     color: hsla(16, 91%, 45%, 0.74);
     font-style: italic;
-
+    margin-bottom: 20px;
 }
 
 .recipeName h2 {
@@ -214,13 +183,30 @@ h2 {
 }
 
 /*------------------------------------------------Recipe Details CSS Page--------------------------------------------------*/
+.mainImg {
+    text-align: center;
+    display: flex;
+    padding: 10px;
+    /* border: 1px solid red; */
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.mainImg img {
+    width: 900px;
+    height: 300px;
+    object-fit: fill;
+}
+
 .recipeDetails {
     /* border: 1px solid red; */
     padding: 5px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     box-sizing: border-box;
-    padding: 0% 15%;
+    padding: 0% 14%;
 }
 
 .disc {
@@ -265,12 +251,12 @@ h2 {
 }
 
 .backButton {
-    display: block;
+    width: 100%;
+    text-align: left;
     font-size: 20px;
-    /* color: red; */
+    /* border:1px solid red;  */
 }
 
-/* Pending Ops
-Remove Important property.
-Bullets placements in Homepage.
-*/
+.backButton.bottom {
+    margin-top: 5px;
+}
