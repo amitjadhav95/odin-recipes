@@ -90,7 +90,7 @@
         color: blue;
     }
 
-    .mainIntro {
+    .mainIntro p {
         /* border: 1px solid red;   */
         font-family: "Source Sans 3", sans-serif;
         font-size: 25px;
@@ -99,14 +99,16 @@
         color: blue;
         font-style: italic;
         width: 100%;
+        opacity: .7;
         text-align: center;
         margin-bottom: .2rem;
+        transition: opacity .6s ease-in, color .6s ease-in, cursor .6s ease-in;
     }
 
-    .mainIntro:hover {
+    .mainIntro p:hover {
+        opacity: 1;
         color: #c1f8c1d6;
         cursor: pointer;
-        font-weight: 800;
     }
 
     .recipe {
