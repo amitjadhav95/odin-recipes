@@ -1,4 +1,8 @@
 # odin-recipes
+Update on 12.40 AM 07/10/2024.
+Added the important missing meta tags - viewport and description.
+Added a favicon.
+
 
 Update on 29/09/2024 12.18 AM
 New Project Design Complete.
