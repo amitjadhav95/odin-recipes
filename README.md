@@ -1,15 +1,11 @@
 # odin-recipes
+Odin Recipes - A Yummy Website about Tasty Dishesh. <br/>
+A Place where you will find tasty dishesh. <br/>
 
-Update on 29/09/2024 12.18 AM
-New Project Design Complete.
-It was an awesome experience, and I learned lot.
+Images/assets taken from: <br/>
+https://www.allrecipes.com <br/>
+https://www.flaticon.com <br/>
+https://www.flaticon.com/authors/freepik <br/>
+https://pikbest.com/ <br/><br/>
 
------
-
-This is a recipes project made only in HTML. Haven't started yet.
-Website used to take the recipes is: https://www.allrecipes.com/
-Added 3 Recipes with a 1 Extra Recipe.
-Added some extra contents like: Homepage URL option and Time Duration for recipes.
-Learned/heard various things such as git merge and editing last git commit.
-
-Completed the Project.
+Thank you.

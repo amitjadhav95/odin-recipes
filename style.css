@@ -1,107 +1,143 @@
-    /*
-    Initial Layout done.    Done
-    h3s from recipe aren't not getting sized.   Done
-
-    Main Intro:    font-family: "Source Sans 3", sans-serif;
-    Main heading: Exo2
+    /* Font 
+    TNR: Logo Default  italic and copyright.
+    Intro text: Source sans.
+    All exo
     */
+
     @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    html,
     body {
         display: flex;
         flex-direction: column;
-        height: auto;
-        background-color: hsl(165, 30%, 57%);
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-        box-sizing: border-box;
-        padding: 1px 8px 0px 2px;
-
-    }
-
-    .mainDiv {
-        display: flex;
-        flex-direction: column;
-        /* border: 1px solid red; */
-        flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+        min-height: 100vh;
+        background: #2A7B9B;
+        margin-top: 10px;
+        background: linear-gradient(90deg, rgba(42, 123, 155, 1) 2%, rgba(56, 255, 139, 1) 60%, rgba(237, 221, 83, 1) 100%) fixed;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
 
+    h1,
+    h2,
+    h3,
     p,
     a,
     ol,
-    ul {
+    ul,
+    li {
         margin: 0;
         padding: 0;
-        text-decoration: none;
     }
 
-    .mainDiv ul {
-        list-style-type: none;
+    .container {
+        width: 85%;
+        margin: 0;
+        padding: 0;
     }
 
-    .mainHeading,
-    .recipeTitle {
+    /* Main Page CSS */
+
+    .recipeTitle,
+    .recipeTitle.bonusRecipeTitle {
         display: flex;
         justify-content: center;
         margin: .5rem 0rem;
         font-weight: 400;
         text-align: center;
         font-style: italic;
-    }
-
-    .mainHeading {
-        font-size: 2.1rem;
-
-    }
-
-    .recipeTitle {
         font-family: "Exo 2", sans-serif;
         font-size: 1.6rem;
-        text-align: center;
         color: blue;
+        text-decoration: none;
     }
 
-    .mainHeading a:link,
-    #trademark a:link {
-        color: red;
+    .recipeTitle h2 {
+        font-size: 30px;
     }
 
     .recipeTitle a:link {
         color: blue;
+        text-decoration: none;
     }
 
-    .mainHeading a:visited,
-    .recipeTitle a:visited,
+    .recipeTitle a:visited {
+        color: #4f427a;
+    }
+
+    .recipeTitle.bonusRecipeTitle {
+        margin-bottom: 3px;
+        font-weight: 600;
+        font-size: 2.5rem;
+        color: hsla(16, 91%, 45%, 0.74);
+    }
+
+    .siteName {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 12px 0 10px 0;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .siteName p {
+        font-size: 55px;
+        font-weight: 700;
+        font-style: italic;
+    }
+
+    .siteName img {
+        width: 100%;
+        max-width: 50px;
+        height: 50px;
+        margin-top: 9px;
+        border-radius: 50%;
+    }
+
+    .mainImg {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+    }
+
+    .siteName a:link {
+        color: red;
+    }
+
     #trademark a:link {
         color: red;
     }
 
-    .mainHeading a:hover,
+    .siteName a:hover,
     .recipeTitle a:hover {
-        color: rgb(195, 241, 158);
+        color: hsl(34, 81%, 49%);
     }
 
-    .recipeTitle {
-        color: blue;
+    .mainIntro {
+        margin-bottom: 10px;
     }
 
     .mainIntro p {
-        /* border: 1px solid red;   */
         font-family: "Source Sans 3", sans-serif;
         font-size: 25px;
         font-weight: 600;
         text-wrap: balance;
         color: blue;
         font-style: italic;
-        width: 100%;
         opacity: .7;
         text-align: center;
-        margin-bottom: .2rem;
         transition: opacity .6s ease-in, color .6s ease-in, cursor .6s ease-in;
     }
 
@@ -111,21 +147,25 @@
         cursor: pointer;
     }
 
+    .allRecipes {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .allRecipes li {
+        list-style-type: none;
+        list-style-position: inside;
+        margin-bottom: 7px;
+    }
+
     .recipe {
-        width: 100%;
-        /* border: 1px solid red; */
-        border-radius: 10px;
-        padding: 10px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        flex-wrap: wrap;
         height: auto;
-    }
-
-    .recipe img {
-        width: 100%;
-        max-width: 500px;
+        width: auto;
+        text-align: center;
     }
 
     .recipe img,
@@ -136,78 +176,51 @@
         -webkit-box-shadow: 0px 0px 20px 5px rgba(115, 58, 214, 1);
         -moz-box-shadow: 0px 0px 20px 5px rgba(115, 58, 214, 1);
         box-shadow: 0px 0px 20px 5px rgba(115, 58, 214, 1);
-        margin-left: 10px;
-        margin-left: 10px;
-        margin-bottom: 10px;
-
     }
 
-    h1,
-    h3,
-    h2 {
-        margin: 0;
-        padding: 0;
-    }
 
-    .recipeName {
-        /* border: 1px solid yellow; */
-        padding: 5px;
-        display: flex;
-    }
+    /*------------------------------------------------ Recipe Details CSS Page--------------------------------------------------*/
 
-    .subMainHeadings {
+    .recipeTitle.detailsPage {
         font-family: "Exo 2", sans-serif;
-        margin: 1.5rem 0rem 1.2rem 0rem;
-        font-weight: 600;
-        font-size: 3rem;
-        color: hsla(16, 91%, 45%, 0.74);
-        font-style: italic;
-        margin-bottom: 20px;
+        font-size: 26px;
+        color: blue;
     }
 
-    .recipeName h2 {
-        font-size: 30px;
-    }
-
-    /*------------------------------------------------Recipe Details CSS Page--------------------------------------------------*/
-
-    .mainImg {
+    .mainImgDetailsPage {
+        border: 1px solid red;
         display: flex;
-        padding: 10px;
         justify-content: center;
-        flex-wrap: wrap;
+        box-shadow: #2A7B9B;
     }
 
-    .mainImg img {
-        align-items: center;
+    .mainImgDetailsPage img {
         width: 100%;
-        max-width: 900px;
-        height: 300px;
-        object-fit: fill;
+        height: 350px;
     }
 
     .recipeDetails {
+        width: 100%;
         padding: 5px;
         font-size: 21px;
-        letter-spacing: .1rem;
+        letter-spacing: 1.5px;
         box-sizing: border-box;
-        padding: 0% 14%;
     }
-
-
-    .recipeSteps,
-    .ingredients,
-    .description {
-        line-height: 1.7rem;
-        font-family: "Roboto", sans-serif;
-    }
-
 
     .description,
     .ingredients,
     .recipeSteps,
     .duration {
-        margin: 14px 0px;
+        line-height: 1.7rem;
+        font-family: "Roboto", sans-serif;
+        margin: 14px 0;
+    }
+
+    .description h2,
+    .ingredients h2,
+    .recipeSteps h2,
+    .duration h2 {
+        text-decoration: underline;
     }
 
     .ingredients h2 {
@@ -217,11 +230,8 @@
 
     .description h2 {
         text-align: center;
-    }
-
-
-    .durationHeading {
-        font-size: 30px;
+        font-style: italic;
+        font-weight: 500;
     }
 
     .recipeSteps {
@@ -253,44 +263,56 @@
     }
 
     .stepsImg {
+        display: flex;
         text-align: center;
-        margin-top: 10px;
+        margin: 4px 0;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
     }
 
     .stepsImg img {
-        width: 500px;
-    }
-
-    .stepsImg.special img {
-        width: 450px;
-        height: 330px;
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        aspect-ratio: 1/1;
     }
 
     .backButton {
-        font-size: 20px;
-        padding: 5px;
-        text-align: left;
-        width: max-content;
         display: flex;
-        box-sizing: border-box;
+        align-items: center;
+        height: 27px;
+    }
+
+    .backButton a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        padding: 5px;
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: .5px;
+    }
+
+    .backButton a img {
+        width: 25px;
+        margin-right: 5px;
     }
 
     .backButton a:link {
-        color: rgb(87, 27, 27);
+        color: hsl(101, 80%, 52%);
+
+
     }
 
-    .backButton a:link {
-        color: rgb(143, 93, 93);
-    }
-
-    .backButton:hover {
+    .backButton a:hover {
         border-right: 1px solid black;
         border-bottom: 1px solid black;
         border-radius: 3px;
     }
 
     #trademark {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         margin: 8px 0px;
         font-weight: 800;
         letter-spacing: 1px;
@@ -298,11 +320,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
     }
 
     sup {
-        font-size: 60%;
+        font-size: 55%;
         letter-spacing: normal;
         font-weight: bold;
     }

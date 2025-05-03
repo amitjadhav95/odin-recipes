@@ -2,91 +2,81 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Odin Recipes</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
 </head>
 
 <body>
-    <div class="mainHeading">
-        <h1><a href="https://amitjadhav95.github.io/odin-recipes/">Odin Recipes.</a></h1>
-    </div>
+    <div class="container">
+        <div class="siteName">
+            <p><a href="https://amitjadhav95.github.io/odin-recipes/">Odin Recipes.</a></p>
+            <img src="./images/mainHeadingImg.png" alt="titleImage">
+        </div>
 
-    <div class="mainDiv">
         <div class="mainIntro">
             <p>"We're excited to offer you 3 delicious recipes, each crafted to bring something special to
                 your kitchen.
-                <br>Whether you're in the mood for something savory or sweet, there's a recipe waiting to inspire your
+                <br>Whether you're in the mood for something savory or sweet, there's a recipe waiting to inspire
+                your
                 next
                 culinary adventure. <br>Dive in and explore these beautifully curated dishes!"
             </p>
         </div>
 
-        <ul>
-            <li>
-                <div class="recipe">
-                    <em><a href="./recipes/extremeChocolateCake.html"> <img
-                                src="./images/chocolateCake/chocolateCake.jpg" alt="Chocolate Cake"></a></em>
-                    <div class="recipeName">
-                        <a href="./recipes/extremeChocolateCake.html">
-                            <h2><em>Extreme Chocolate
-                                    Cake.</em></h2>
-                        </a>
-                    </div>
+        <ul class="allRecipes">
+            <li class="recipe">
+                <a href="./recipes/extremeChocolateCake.html"> <img src="./images/chocolateCake/chocolateCake.jpg"
+                        class="mainImg" alt="Chocolate Cake"></a>
+                <div class="recipeTitle">
+                    <a href="./recipes/extremeChocolateCake.html">
+                        <h2>Extreme Chocolate
+                            Cake.</h2>
+                    </a>
                 </div>
             </li>
-            <li>
-                <div class="recipe">
-                    <em><a href="./recipes/tomatoSoupWithCrispyCheeseToast.html"> <img
-                                src="./images/tomatoSoupWithToast/tomatoSoupWithToast.jpg"
-                                alt="Tomato Soup with Cheese Toast"></a></em>
-                    <div class="recipeName">
-                        <h2><em><a href="./recipes/tomatoSoupWithCrispyCheeseToast.html">Tomato
-                                    Soup With Cheese Toast.</a></em></h2>
-                    </div>
+            <li class="recipe">
+                <a href="./recipes/tomatoSoupWithCrispyCheeseToast.html"> <img class="mainImg"
+                        src="./images/tomatoSoupWithToast/tomatoSoupWithToast.jpg"
+                        alt="Tomato Soup with Cheese Toast"></a>
+                <div class="recipeTitle">
+                    <h2><a href="./recipes/tomatoSoupWithCrispyCheeseToast.html">Tomato
+                            Soup With Cheese Toast.</a></h2>
                 </div>
             </li>
+            <li class="recipe">
+                <a href="./recipes/phillyCheeseSteakSandwich.html"> <img class="mainImg"
+                        src="./images/phillyCheeseSteakSandwich/phillyCheeseSteakSandwichMain.jpg"
+                        alt="Philly Steak Sandwich"> </a>
+                <div class="recipeTitle">
+                    <h2><a href="./recipes/phillyCheeseSteakSandwich.html">Philly
+                            Cheesesteak Sandwich.</a></h2>
+                </div>
+            </li>
+
             <li>
-                <div class="recipe">
-                    <em><a href="./recipes/phillyCheeseSteakSandwich.html"> <img
-                                src="./images/phillyCheeseSteakSandwich/phillyCheeseSteakSandwichMain.jpg"
-                                alt="Philly Steak Sandwich"> </a></em>
-                    <div class="recipeName">
-                        <h2><em><a href="./recipes/phillyCheeseSteakSandwich.html">Philly
-                                    Cheesesteak Sandwich.</a></em></h2>
-                    </div>
+                <p class="recipeTitle bonusRecipeTitle">We have added a Bonus Recipe:
+                <p>
+            </li>
+
+            <li class="recipe">
+                <a href="./recipes/naanBreadMargheritaPizzaWithProsciutto.html"> <img class="mainImg"
+                        src="./images/naanBreadMargheritaWithProsciutto/naanBreadMargheritaPizza.jpg"
+                        alt="Naan Bread Margherita Pizza Main Img"></a>
+                <div class="recipeTitle">
+                    <h2><a href="./recipes/naanBreadMargheritaPizzaWithProsciutto.html">Naan Bread
+                            Margherita
+                            With
+                            Prosciutto.</a></h2>
                 </div>
             </li>
         </ul>
-        <br>
 
-        <h2 class="subMainHeadings">We have added a Bonus Recipe:</h2>
-        <ul>
-            <li>
-                <div class="recipe">
-                    <em><a href="./recipes/naanBreadMargheritaPizzaWithProsciutto.html"> <img
-                                src="./images/naanBreadMargheritaWithProsciutto/naanBreadMargheritaPizza.jpg"
-                                alt="Naan Bread Margherita Pizza Main Img"></a></em>
-                    <div class="recipeName">
-                        <h2><em><a href="./recipes/naanBreadMargheritaPizzaWithProsciutto.html">Naan Bread
-                                    Margherita
-                                    With
-                                    Prosciutto.</a></em></h2>
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </div>
-
-    <div id="trademark">
-        <a href="https://amitjadhav95.github.io/odin-recipes/index.html">Odin Recipes<sup>TM</sup></a>
+        <div id="trademark">
+            <a href="https://amitjadhav95.github.io/odin-recipes/index.html">Odin Recipes<sup>TM</sup></a>
+        </div>
     </div>
 </body>
 
