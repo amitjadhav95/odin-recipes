@@ -1,9 +1,3 @@
-    /* Font 
-    TNR: Logo Default  italic and copyright.
-    Intro text: Source sans.
-    All exo
-    */
-
     @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
@@ -12,6 +6,7 @@
     *::before,
     *::after {
         box-sizing: border-box;
+        /* outline: 1px solid red; */
     }
 
     html,
@@ -53,7 +48,6 @@
     .recipeTitle.bonusRecipeTitle {
         display: flex;
         justify-content: center;
-        margin: .5rem 0rem;
         font-weight: 400;
         text-align: center;
         font-style: italic;
@@ -64,7 +58,7 @@
     }
 
     .recipeTitle h2 {
-        font-size: 30px;
+        font-size: 35px;
     }
 
     .recipeTitle a:link {
@@ -77,7 +71,6 @@
     }
 
     .recipeTitle.bonusRecipeTitle {
-        margin-bottom: 3px;
         font-weight: 600;
         font-size: 2.5rem;
         color: hsla(16, 91%, 45%, 0.74);
@@ -93,7 +86,7 @@
     }
 
     .siteName p {
-        font-size: 55px;
+        font-size: 66px;
         font-weight: 700;
         font-style: italic;
     }
@@ -104,12 +97,6 @@
         height: 50px;
         margin-top: 9px;
         border-radius: 50%;
-    }
-
-    .mainImg {
-        width: 100%;
-        max-width: 500px;
-        height: auto;
     }
 
     .siteName a:link {
@@ -131,7 +118,7 @@
 
     .mainIntro p {
         font-family: "Source Sans 3", sans-serif;
-        font-size: 25px;
+        font-size: 33px;
         font-weight: 600;
         text-wrap: balance;
         color: blue;
@@ -147,24 +134,46 @@
         cursor: pointer;
     }
 
-    .allRecipes {
-        text-align: center;
+    .allRecipes,
+    .allRecipes.bonusrecipes {
         display: flex;
-        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        /* border: 1px solid red; */
+        padding: 10px;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        overflow: hidden;
     }
 
     .allRecipes li {
         list-style-type: none;
         list-style-position: inside;
-        margin-bottom: 7px;
+        margin: 10px;
     }
 
     .recipe {
         display: flex;
         flex-direction: column;
         align-items: center;
+        max-width: 530px;
         height: auto;
-        width: auto;
+        text-align: center;
+    }
+
+    .recipe .mainImg {
+        width: 100%;
+        height: 100%;
+        margin: 10px;
+        aspect-ratio: 1/1;
+    }
+
+    .allRecipes.bonusRecipes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         text-align: center;
     }
 
@@ -172,7 +181,7 @@
     .recipeDetails img {
         margin: 0;
         padding: 0;
-        border-radius: 8px;
+        border-radius: 50%;
         -webkit-box-shadow: 0px 0px 20px 5px rgba(115, 58, 214, 1);
         -moz-box-shadow: 0px 0px 20px 5px rgba(115, 58, 214, 1);
         box-shadow: 0px 0px 20px 5px rgba(115, 58, 214, 1);
@@ -188,15 +197,15 @@
     }
 
     .mainImgDetailsPage {
-        border: 1px solid red;
+        /* border: 1px solid red; */
         display: flex;
         justify-content: center;
-        box-shadow: #2A7B9B;
     }
 
     .mainImgDetailsPage img {
         width: 100%;
-        height: 350px;
+        height: 380px;
+        border-radius: 20px;
     }
 
     .recipeDetails {
@@ -301,8 +310,6 @@
 
     .backButton a:link {
         color: hsl(101, 80%, 52%);
-
-
     }
 
     .backButton a:hover {
