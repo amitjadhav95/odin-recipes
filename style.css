@@ -5,8 +5,7 @@
     *,
     *::before,
     *::after {
-        box-sizing: border-box;
-        /* outline: 1px solid red; */
+        box-sizing: border-box;        
     }
 
     html,
@@ -58,7 +57,7 @@
     }
 
     .recipeTitle h2 {
-        font-size: 35px;
+        font-size: 28px;
     }
 
     .recipeTitle a:link {
@@ -67,7 +66,7 @@
     }
 
     .recipeTitle a:visited {
-        color: #4f427a;
+        color: rgb(193, 199, 223);
     }
 
     .recipeTitle.bonusRecipeTitle {
@@ -86,7 +85,7 @@
     }
 
     .siteName p {
-        font-size: 66px;
+        font-size: 58px;
         font-weight: 700;
         font-style: italic;
     }
@@ -118,7 +117,7 @@
 
     .mainIntro p {
         font-family: "Source Sans 3", sans-serif;
-        font-size: 33px;
+        font-size: 28px;
         font-weight: 600;
         text-wrap: balance;
         color: blue;
@@ -141,32 +140,31 @@
         flex-wrap: wrap;
         /* border: 1px solid red; */
         padding: 10px;
-        width: 100%;
         height: auto;
         justify-content: center;
-        overflow: hidden;
-    }
-
-    .allRecipes li {
-        list-style-type: none;
-        list-style-position: inside;
-        margin: 10px;
     }
 
     .recipe {
         display: flex;
         flex-direction: column;
         align-items: center;
-        max-width: 530px;
-        height: auto;
-        text-align: center;
+        max-width: 365px;
+        height: 100%;
+        gap: 8px;
+        text-align: center;        
+    }
+
+    .allRecipes li {
+        list-style-type: none;
+        list-style-position: inside;
+        margin: 8px;
     }
 
     .recipe .mainImg {
         width: 100%;
-        height: 100%;
         margin: 10px;
         aspect-ratio: 1/1;
+        margin: 5px 35px 15px 0;        
     }
 
     .allRecipes.bonusRecipes {
@@ -186,7 +184,6 @@
         -moz-box-shadow: 0px 0px 20px 5px rgba(115, 58, 214, 1);
         box-shadow: 0px 0px 20px 5px rgba(115, 58, 214, 1);
     }
-
 
     /*------------------------------------------------ Recipe Details CSS Page--------------------------------------------------*/
 
