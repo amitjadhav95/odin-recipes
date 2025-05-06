@@ -5,7 +5,7 @@
     *,
     *::before,
     *::after {
-        box-sizing: border-box;        
+        box-sizing: border-box;
     }
 
     html,
@@ -79,7 +79,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 12px 0 10px 0;
+        margin: 12px;
         flex-wrap: wrap;
         text-align: center;
     }
@@ -119,12 +119,11 @@
         font-family: "Source Sans 3", sans-serif;
         font-size: 28px;
         font-weight: 600;
-        text-wrap: balance;
         color: blue;
         font-style: italic;
         opacity: .7;
         text-align: center;
-        transition: opacity .6s ease-in, color .6s ease-in, cursor .6s ease-in;
+        transition: .8s ease-in-out;
     }
 
     .mainIntro p:hover {
@@ -149,9 +148,9 @@
         flex-direction: column;
         align-items: center;
         max-width: 365px;
-        height: 100%;
+        height: auto;
         gap: 8px;
-        text-align: center;        
+        text-align: center;
     }
 
     .allRecipes li {
@@ -164,7 +163,7 @@
         width: 100%;
         margin: 10px;
         aspect-ratio: 1/1;
-        margin: 5px 35px 15px 0;        
+        margin: 5px 35px 15px 0;
     }
 
     .allRecipes.bonusRecipes {
@@ -271,17 +270,20 @@
     .stepsImg {
         display: flex;
         text-align: center;
-        margin: 4px 0;
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
         justify-content: center;
         flex-wrap: wrap;
+        align-items: center;
         gap: 10px;
     }
 
     .stepsImg img {
         width: 100%;
-        max-width: 500px;
-        height: auto;
+        max-width: 365px;
         aspect-ratio: 1/1;
+        margin: 3px;
     }
 
     .backButton {
