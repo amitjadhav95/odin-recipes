@@ -20,6 +20,7 @@
         background: linear-gradient(90deg, rgba(42, 123, 155, 1) 2%, rgba(56, 255, 139, 1) 60%, rgba(237, 221, 83, 1) 100%) fixed;
         margin: 0;
         padding: 0;
+        gap: 10px;
         box-sizing: border-box;
     }
 
@@ -79,7 +80,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 12px;
         flex-wrap: wrap;
         text-align: center;
     }
@@ -94,8 +94,8 @@
         width: 100%;
         max-width: 50px;
         height: 50px;
-        margin-top: 9px;
         border-radius: 50%;
+        margin: 17px 0 0 3px;
     }
 
     .siteName a:link {
@@ -104,6 +104,7 @@
 
     #trademark a:link {
         color: red;
+        font-size: 20px;
     }
 
     .siteName a:hover,
@@ -137,8 +138,7 @@
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-        /* border: 1px solid red; */
-        padding: 10px;
+        text-align: center;        
         height: auto;
         justify-content: center;
     }
@@ -149,7 +149,6 @@
         align-items: center;
         max-width: 365px;
         height: auto;
-        gap: 8px;
         text-align: center;
     }
 
@@ -332,4 +331,45 @@
         font-size: 55%;
         letter-spacing: normal;
         font-weight: bold;
+    }
+
+    /* -----------------------------Media Queries--------------------------------------- */    
+
+    @media screen and (width < 668px) {
+
+        .siteName a:link {
+            color: hsl(88, 100%, 58%);
+            font-size: 38px;
+        }
+
+        .siteName img {
+            width: 25px;
+            height: 25px;
+        }
+
+        .mainIntro p {
+            font-size: 14px;
+        }
+
+        .recipe {
+            max-width: 300px;
+        }
+
+        .backButton a {
+            font-size: 19px;
+        }
+
+        .backButton a img {
+            width: 19px;
+        }
+
+        /* Details Page */
+
+        .recipeTitle.detailsPage {
+            font-size: 15px;
+        }
+
+        .stepsImg img {
+            max-width: 300px;
+        }
     }
