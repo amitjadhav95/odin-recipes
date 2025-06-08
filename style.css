@@ -6,6 +6,7 @@
     *::before,
     *::after {
         box-sizing: border-box;
+        /* outline: 1px solid red; */
     }
 
     html,
@@ -15,20 +16,16 @@
         align-items: center;
         justify-content: center;
         min-height: 100vh;
-        background: #2A7B9B;
-        margin-top: 10px;
         background: linear-gradient(90deg, rgba(42, 123, 155, 1) 2%, rgba(56, 255, 139, 1) 60%, rgba(237, 221, 83, 1) 100%) fixed;
         margin: 0;
-        padding: 0;
-        gap: 10px;
         box-sizing: border-box;
+        overflow-x: hidden;
     }
 
     h1,
     h2,
     h3,
     p,
-    a,
     ol,
     ul,
     li {
@@ -38,14 +35,17 @@
 
     .container {
         width: 85%;
-        margin: 0;
+        margin: 0 auto;
         padding: 0;
+        /* border: 1px solid red; */
+        position: relative;
+        margin-bottom: 8px;
     }
 
     /* Main Page CSS */
 
     .recipeTitle,
-    .recipeTitle.bonusRecipeTitle {
+    .recipeTitleBonus {
         display: flex;
         justify-content: center;
         font-weight: 400;
@@ -55,6 +55,13 @@
         font-size: 1.6rem;
         color: blue;
         text-decoration: none;
+    }
+
+    .recipeTitleBonus {
+        font-weight: 600;
+        font-size: 2.5rem;
+        color: hsla(16, 91%, 45%, 0.74);
+        width: 100%;
     }
 
     .recipeTitle h2 {
@@ -70,21 +77,17 @@
         color: rgb(193, 199, 223);
     }
 
-    .recipeTitle.bonusRecipeTitle {
-        font-weight: 600;
-        font-size: 2.5rem;
-        color: hsla(16, 91%, 45%, 0.74);
-    }
-
     .siteName {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
         text-align: center;
+        margin: 5px 0 8px 0;
     }
 
-    .siteName p {
+    .siteName a:link {
+        color: red;
         font-size: 58px;
         font-weight: 700;
         font-style: italic;
@@ -95,11 +98,7 @@
         max-width: 50px;
         height: 50px;
         border-radius: 50%;
-        margin: 17px 0 0 3px;
-    }
-
-    .siteName a:link {
-        color: red;
+        margin: 5px 0 0 3px;
     }
 
     #trademark a:link {
@@ -112,8 +111,16 @@
         color: hsl(34, 81%, 49%);
     }
 
+    /* start here */
+
     .mainIntro {
+        /* border: 1px solid red; */
         margin-bottom: 10px;
+        position: relative;
+        width: 100vw;
+        max-width: 100vw;
+        left: calc(-8.9%);
+        margin-bottom: 8px;
     }
 
     .mainIntro p {
@@ -124,7 +131,9 @@
         font-style: italic;
         opacity: .7;
         text-align: center;
-        transition: .8s ease-in-out;
+        transition: .6s ease-in-out;
+        margin: 0 auto;
+        padding: 0 10px;
     }
 
     .mainIntro p:hover {
@@ -134,13 +143,10 @@
     }
 
     .allRecipes,
-    .allRecipes.bonusrecipes {
+    .allRecipes.bonusRecipes {
         display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        text-align: center;        
-        height: auto;
         justify-content: center;
+        flex-wrap: wrap;
     }
 
     .recipe {
@@ -148,29 +154,16 @@
         flex-direction: column;
         align-items: center;
         max-width: 365px;
-        height: auto;
-        text-align: center;
     }
 
     .allRecipes li {
         list-style-type: none;
-        list-style-position: inside;
-        margin: 8px;
+        margin: 7px;
     }
 
     .recipe .mainImg {
         width: 100%;
-        margin: 10px;
         aspect-ratio: 1/1;
-        margin: 5px 35px 15px 0;
-    }
-
-    .allRecipes.bonusRecipes {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
     }
 
     .recipe img,
@@ -185,27 +178,23 @@
 
     /*------------------------------------------------ Recipe Details CSS Page--------------------------------------------------*/
 
-    .recipeTitle.detailsPage {
-        font-family: "Exo 2", sans-serif;
-        font-size: 26px;
-        color: blue;
-    }
-
     .mainImgDetailsPage {
         /* border: 1px solid red; */
         display: flex;
         justify-content: center;
+        margin-bottom: 8px;
     }
 
     .mainImgDetailsPage img {
-        width: 100%;
-        height: 380px;
-        border-radius: 20px;
+        display: block;
+        max-width: 100%;          
+        aspect-ratio: 16/4;
+        border-radius: 12px;
     }
 
     .recipeDetails {
         width: 100%;
-        padding: 5px;
+        padding: 0 5px;
         font-size: 21px;
         letter-spacing: 1.5px;
         box-sizing: border-box;
@@ -225,17 +214,17 @@
     .recipeSteps h2,
     .duration h2 {
         text-decoration: underline;
+        margin-bottom: 5px;
+        cursor: pointer;
     }
 
     .ingredients h2 {
-        margin-bottom: 10px;
         font-size: 30px;
     }
 
-    .description h2 {
+    .description {
         text-align: center;
         font-style: italic;
-        font-weight: 500;
     }
 
     .recipeSteps {
@@ -246,21 +235,11 @@
         align-items: center;
     }
 
-    .recipeSteps h2 {
-        margin-bottom: 10px;
-    }
-
-    .stepsHeading {
-        margin-bottom: 8px;
-        ;
-    }
-
     .recipeDetails ol {
         list-style-position: inside;
     }
 
     .recipeSteps ol {
-        /* padding-left: 2rem; */
         display: flex;
         flex-direction: column;
         gap: 10px;
@@ -275,35 +254,33 @@
         justify-content: center;
         flex-wrap: wrap;
         align-items: center;
-        gap: 10px;
+        gap: 13px;
     }
 
     .stepsImg img {
         width: 100%;
         max-width: 365px;
         aspect-ratio: 1/1;
-        margin: 3px;
     }
 
     .backButton {
-        display: flex;
-        align-items: center;
-        height: 27px;
-    }
-
-    .backButton a {
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-        padding: 5px;
-        font-size: 22px;
-        font-weight: 700;
-        letter-spacing: .5px;
+        margin-left: 20px;
+        display: inline-block;
     }
 
     .backButton a img {
-        width: 25px;
-        margin-right: 5px;
+        display: inline-block;
+        width: 22px;
+        margin-right: 3px;
+        vertical-align: text-bottom;
+    }
+
+    .backButton a {
+        text-decoration: none;
+        font-size: 19px;
+        font-weight: 700;
+        letter-spacing: .5px;
+        vertical-align: middle;
     }
 
     .backButton a:link {
@@ -316,9 +293,13 @@
         border-radius: 3px;
     }
 
+    .recipeTitle.detailsPage {
+        margin-bottom: 8px;
+    }
+
     #trademark {
         font-size: 1.5rem;
-        margin: 8px 0px;
+        margin: 8px 0 3px 0;
         font-weight: 800;
         letter-spacing: 1px;
         font-style: italic;
@@ -333,7 +314,7 @@
         font-weight: bold;
     }
 
-    /* -----------------------------Media Queries--------------------------------------- */    
+    /* -----------------------------Media Queries--------------------------------------- */
 
     @media screen and (width < 668px) {
 
